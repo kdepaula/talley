@@ -8,6 +8,7 @@ public class Talley
 	//Instance Variables
 	
 	private int count;
+	//private int startValue;
 	
 	//Constructor
 	
@@ -29,4 +30,25 @@ public class Talley
 		//count+=1; (this is a shortcut to add any number)
 		//you can also do multiply, divide, or subtract instead of +
 	}
+	
+	public void unclick()
+	{
+		count = count - 1;
+	}
+	
+	public void reset()
+	{
+		count = 0;
+	}
+	
+	public int getCount()
+	{
+		return count;
+	}
+	
+	public String toString()
+	{
+		return "count:" + count;
+	}
 }
+
